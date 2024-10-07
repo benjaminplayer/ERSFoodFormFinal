@@ -1,0 +1,368 @@
+/*@font-face {
+    font-family: "MyFont";
+    src: url(../fonts/nekaj.otf);
+}*/
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+
+body{
+    font-family: "Noto Sans", sans-serif;
+}
+
+#mainHeader{
+    display: flex;
+    width: 100%;
+    min-height: 100px; 
+    flex-wrap: nowrap;
+}
+
+#headerLogo{
+    align-self: flex-start;
+    width: 320px;
+    height: 60px;
+}
+
+#headerLogo img{
+    height: 60px;
+}
+
+#headerTitle{
+    align-self: center;
+}
+
+
+#main{
+    margin: 1em auto;
+    width: 800px;
+    min-height: 500px;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    gap: 1em;
+}
+
+#first{
+    width: 800px;
+    height: 350px;
+    border: 2px solid;
+    border-radius: 10px;
+}
+
+#imesedez{
+    min-height: 3.1em;
+    width: 100%;
+}
+
+#first #imesedez label{
+    font-weight:bold;
+    display: block;
+}
+
+#first #imesedez input{
+    width: 100%;
+    height: 2em;
+    border:none;
+    border-bottom: 2px solid;
+    outline: none;
+}
+
+#data{
+    background: lightblue;
+    height: 2em;
+    line-height: 2em;
+    width:100%;
+}
+
+#vlagateljText{
+    font-weight: bold;
+    float: left;
+    width: 396px;
+    height: 2em;
+    border-right: 2px solid;
+}
+
+#vlagateljCheck{
+    float:left;
+    width: 396px;
+    margin-left: 0.4em;
+    font-size: small;
+
+}
+
+#vlagateljCheck .floatLeft{
+    float: left;
+    width: 33%;
+}
+
+#vlagaleljCheck label{
+    float:left;
+}
+
+#vlagateljCheck input[type="radio"]{
+    height: 1em;
+    width: 1em;
+    display: inline;
+    margin-left: .05em;
+}
+
+#vlagateljCheck label{
+    width: 10px;
+    display:inline;
+}
+
+#data2{
+    width: 100%;
+    height: 5em;
+}
+
+#dat2Ime{
+    height: inherit;
+    width: 396px;
+    float:left;
+    border-right: 2px solid;
+}
+
+#data2 textarea{
+    resize: none;
+    width: 100%;
+    height: inherit;
+    outline: none;
+    border: none;
+}
+
+#dat2Naslov{
+    height: inherit;
+    width: 396px;
+    float:left;
+}
+
+#data3{
+    background: lightgray;
+    height: 2em;
+    width: 100%;
+    line-height: 2em;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+}
+
+#data4{
+    background: lightcoral;
+    height: 5em;
+    width: 100%;
+    border-bottom: 2px solid;
+}
+
+#dat4Ime{
+    height: inherit;
+    width: 396px;
+    float:left;
+    border-right: 2px solid;
+}
+
+#data4 textarea{
+    resize: none;
+    width: 100%;
+    height: inherit;
+    outline: none;
+    border: none;
+}
+
+#dat4Nas{
+    height: inherit;
+    width: 402px;
+    float:left;
+}
+
+#data5{
+    background: lightpink;
+    width: 396px;
+    height: 4em;
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+}
+
+#dat5Out{
+    width: 70%;
+    height: 2em;
+    border-right: 2px solid;
+    border-bottom:2px solid;
+    float: left;
+}
+
+#dat5Text{
+    width: 100%;
+    height: 2em;
+    line-height: 2em;
+}
+
+#dat5Emso{
+    height: 2em;
+    width: 100%;
+    border-right: 2px solid;
+}
+
+#dat5Emso input[type="text"]{
+    height:2em;
+    width: 98.4%;
+    margin-top: .1em;
+    outline: none;
+}
+
+#dat5Right{
+    float: left;
+    width: 29%;
+    height: 4em;
+    font-size: small;
+    text-align: center;
+}
+
+#dat5Right input[type="text"]{
+    width: 98%;
+    height: 3.16em;
+}
+
+#second{
+    width: 100%;
+    height: 6em;
+    border: 2px solid;
+    border-radius:10px;
+}
+
+#secondHeadder{
+    width: 98.4%;
+    height: 2em;
+    padding: 0 .4em;
+    line-height: 2em;
+    font-weight: bold;
+    border-radius: 8px;
+    background: lightgray;
+}
+
+#secondData{
+    border-top: 2px solid;
+    width: 98.4%;
+    height: 4em;
+    padding: .3em .4em;
+}
+
+#third{
+    border: 2px solid;
+    border-radius: 10px;
+    height: 400px;
+    width: 100%;
+    background: lightblue;
+    list-style-position: inside;
+}
+
+#third h3{
+    font-style: italic;
+}
+
+#third ul{
+    list-style-type:"-";
+}
+
+#thirdHighlited{
+    color:red;
+}
+
+#thirdHighlited a{
+    color: red;
+    transition: 300ms;
+}
+
+#thirdHighlited a:hover{
+    color: hsl(249, 87%, 55%);
+    transition: 300ms;
+}
+
+#thirdIzjava{
+    margin: 1em 0;
+}
+
+#thirdSepparator{
+    background: lightgray;
+    width: 100%;
+    height: 6em;
+    line-height: 6em;
+}
+
+#thirdDate{
+    background: lightcoral;
+    float: left;
+    height: 6em;
+    width: 50%;
+}
+
+#thirdDate input[type="date"]{
+    transition: ease-in 50ms;
+    width: 50%;
+    height: 1.5em;
+    border: none;
+    outline: none;
+}
+
+#thirdDate input[type="date"]:focus{
+    border-bottom: 4px solid lightgray;
+    transition: ease-in 50ms;
+
+}
+
+#thirdSignature{
+    float: right;
+    background: lightgreen;
+    width: 40%;
+    height: 6em;
+}
+
+#fourth{
+    width: 100%;
+    height: 175;
+    border: 2px solid;
+    border-radius: 4px;
+    list-style:inside;
+}
+
+#fourth h4{
+    margin: 4px;
+}
+
+#fourth ol{
+    margin: 4px;
+}
+
+#fifth{
+    background: lightblue;
+    width: 100%;
+    height: 2em;
+    line-height: 2em;
+    text-align: center;
+}
+
+#fifth input[type="submit"]{
+    height: 2em;
+}
+
+/*
+    popravi padding iz em v px
+    popravi paddinge ter scales
+
+*/
+
+
